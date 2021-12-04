@@ -11,11 +11,8 @@ def main():
     with open('input.txt', 'w') as file:
         file.write(input_string)
 
-
-
-
 '''
-execute the main function
+Execute the main function
 '''
 if __name__ == "__main__":
     main()
