@@ -1,5 +1,5 @@
 # python-script
-In this repository i want test python and i do a lots script to make stuff
+In this repository i want test python and i do a lots python script to make stuff
 
 
 
