@@ -1,18 +1,18 @@
 '''
-Save the input in to file
+Show all pokemon name and number
 '''
 def main():
     '''
-    Main function
+    Show all pokemon name and number
     '''
-    # Get the input
-    input_string = input()
-    # Write to file
-    with open('input.txt', 'w') as file:
-        file.write(input_string)
+    import requests
+    import json
 
-'''
-Execute the main function
-'''
-if __name__ == "__main__":
-    main()
+    url = 'https://pokeapi.co/api/v2/pokemon/'
+    response = requests.get(url)
+    data = response.json()
+    for i in range(len(data['results'])):
+        print(data['results'][i]['name'], data['results'][i]['url'])
+
+__name__ == '__main__' 
+main()
