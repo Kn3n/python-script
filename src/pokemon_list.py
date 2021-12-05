@@ -5,6 +5,7 @@ def main():
     '''
     Show all pokemon name and number
     '''
+    # Import the library to read the API
     import requests
     import json
 
@@ -13,7 +14,6 @@ def main():
     data = response.json()
     for i in range(len(data['results'])):
         print(data['results'][i]['name'], data['results'][i]['url'])
-
 
 '''
 Execute the main function
