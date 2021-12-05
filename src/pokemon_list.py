@@ -14,5 +14,9 @@ def main():
     for i in range(len(data['results'])):
         print(data['results'][i]['name'], data['results'][i]['url'])
 
+
+'''
+Execute the main function
+'''
 __name__ == '__main__' 
 main()
